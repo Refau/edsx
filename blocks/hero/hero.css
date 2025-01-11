@@ -35,3 +35,23 @@
     padding: 40px 32px;
   }
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adds space between elements */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style left content */
+.content-left {
+    flex: 3; /* Takes equal width */
+    max-width: 50%;
+}
+
+/* Style right content */
+.content-right {
+    flex: 5; /* Takes equal width */
+    max-width: 50%;
+}
