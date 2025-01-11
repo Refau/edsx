@@ -280,10 +280,14 @@ main .section.highlight {
     margin: auto;
 }
 
-.section.bg-primary {
+.section.bg-primary .default-content-wrapper {
     background-color: #17255f;
 }
 
-.section.bg-secondary {
+.section.bg-secondary .default-content-wrapper {
     background-color: #007acd;
+}
+
+.section.full-width .default-content-wrapper {
+
 }
