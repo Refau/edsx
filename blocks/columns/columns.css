@@ -32,74 +32,58 @@
   }
 }
 
-/* Teaser Container */
 .columns-teaser {
     display: flex;
-    flex-direction: row; /* Image and content side by side */
-    max-width: 800px;
-    margin: 20px auto;
+    align-items: center;  /* Aligne les éléments verticalement */
+    background-color: #17255f;  /* Fond bleu foncé */
+    color: white;  /* Texte blanc */
+    height: 400px; /* Hauteur fixe */
     padding: 20px;
-    background-color: #17255f; /* Background color */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: white; /* Text color */
+    border-radius: 10px; /* Coins arrondis (facultatif) */
+    overflow: hidden; /* Évite les débordements */
 }
 
-/* Image Section */
-.columns-teaser .columns-img-col {
-    flex: 1 1 40%; /* Image takes up 40% of the width */
-    margin-right: 20px;
-    overflow: hidden;
+/* Colonne image */
+.columns-img-col {
+    flex: 0 0 40%; /* Prend 40% de la largeur */
+    max-height: 100%; /* Garde l’image dans la hauteur du teaser */
 }
 
-.columns-teaser .columns-img-col img {
+.columns-img-col img {
     width: 100%;
-    height: 250px; /* Fixed height for the image */
-    object-fit: cover;
-    border-radius: 8px;
+    height: 100%;
+    object-fit: cover; /* Recadre l'image pour qu'elle s’adapte bien */
+    border-radius: 8px; /* Coins arrondis */
 }
 
-/* Content Section (Title, Text + Button) */
-.columns-teaser .wrapped-child {
-    flex: 1 1 60%; /* Content takes up 60% of the width */
+/* Colonne contenant le texte et le bouton */
+.title-text-button-wrapper {
+    flex: 1; /* Prend l’espace restant */
     display: flex;
-    flex-direction: column; /* Stack title, text, and button vertically */
-    justify-content: flex-start; /* Align items from top */
+    flex-direction: column;
+    justify-content: center; /* Centre le texte verticalement */
+    gap: 15px; /* Espacement entre les éléments */
+    padding: 20px;
 }
 
-/* Title Section */
-.columns-teaser h2 {
+h2 {
+    margin: 0;
     font-size: 24px;
     font-weight: bold;
-    color: white; /* Title color */
-    margin-bottom: 15px;
 }
 
-/* Text Section */
-.columns-teaser .wrapped-child div {
-    font-size: 16px;
-    color: white; /* Text color */
-    margin-bottom: 20px;
-}
-
-/* Button Section */
-.columns-teaser .button-container {
+.button-container .button {
+    display: inline-block;
+    background-color: #f4a261; /* Couleur bouton orange */
+    color: #17255f;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
     text-align: center;
 }
 
-.columns-teaser .button-container .button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #007bff;
+.button-container .button:hover {
+    background-color: #e76f51; /* Effet hover */
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
 }
-
-.columns-teaser .button-container .button:hover {
-    background-color: #0056b3;
-}
-
