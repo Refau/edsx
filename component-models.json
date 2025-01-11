@@ -19,6 +19,17 @@
     "id": "title",
     "fields": [
       {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          }
+        ]
+      },
+      {
         "component": "text",
         "name": "title",
         "label": "Title"
