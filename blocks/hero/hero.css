@@ -48,6 +48,7 @@
 .content-left {
     flex: 3;
     color: #007acd !important;
+    margin-left: 10rem;
 }
 
 /* Style right content */

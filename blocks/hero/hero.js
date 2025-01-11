@@ -37,5 +37,65 @@ export default async function decorate(block) {
     // Add a class to the wrapper to style it
     wrapperDiv.classList.add("flex-container");
   }
+
+  let h4Elements = document.querySelectorAll("h4");
+
+  h4Elements.forEach((h4) => {
+    // Create a new SVG element
+    let svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svgElement.setAttribute("class", "c-header3Cta__linkIcon");
+    svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svgElement.setAttribute("width", "24");
+    svgElement.setAttribute("height", "24");
+    svgElement.setAttribute("viewBox", "0 0 24 24");
+    svgElement.setAttribute("aria-hidden", "true");
+    svgElement.setAttribute("focusable", "false");
+
+    // Create the path inside the SVG
+    let pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    pathElement.setAttribute("d", "M13.9,12,6.6,4.7,8,3.3,16.7,12,8,20.7,6.6,19.3Z");
+    pathElement.setAttribute("fill-rule", "evenodd");
+
+    // Append the path to the SVG
+    svgElement.appendChild(pathElement);
+
+    // Insert the SVG after the h4 element
+    h4.insertAdjacentElement("afterend", svgElement);
+  });
+
+
+
+    h4Elements.forEach((h4) => {
+      // Create a wrapper div
+      let wrapperDiv = document.createElement("div");
+      wrapperDiv.classList.add("h4-svg-wrapper"); // Add a class for styling
+
+      // Create the SVG element
+      let svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svgElement.setAttribute("class", "c-header3Cta__linkIcon");
+      svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+      svgElement.setAttribute("width", "24");
+      svgElement.setAttribute("height", "24");
+      svgElement.setAttribute("viewBox", "0 0 24 24");
+      svgElement.setAttribute("aria-hidden", "true");
+      svgElement.setAttribute("focusable", "false");
+
+      // Create the path inside the SVG
+      let pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      pathElement.setAttribute("d", "M13.9,12,6.6,4.7,8,3.3,16.7,12,8,20.7,6.6,19.3Z");
+      pathElement.setAttribute("fill-rule", "evenodd");
+
+      // Append the path to the SVG
+      svgElement.appendChild(pathElement);
+
+      // Insert the wrapper div before the h4 element
+      h4.parentNode.insertBefore(wrapperDiv, h4);
+
+      // Move the h4 inside the wrapper div
+      wrapperDiv.appendChild(h4);
+
+      // Move the SVG inside the wrapper div
+      wrapperDiv.appendChild(svgElement);
+    });
 }
 
