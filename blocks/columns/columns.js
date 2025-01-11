@@ -6,17 +6,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     [...row.children].forEach((col) => {
       col.classList.add('columns-teaser');
-      col.forEach((column) => {
-        // Create a new div element to wrap the content
-        const wrapperDiv = document.createElement('div');
-        wrapperDiv.classList.add('wrapped-container'); // Optional: add a class to the wrapper div
-
-        // Insert the wrapperDiv before the column element
-        column.parentNode.insertBefore(wrapperDiv, column);
-
-        // Move the column element inside the wrapperDiv
-        wrapperDiv.appendChild(column);
-      });
+      wrapChildrenWithDiv(col);
       const pic = col.querySelector('picture');
       if (pic) {
         const picWrapper = pic.closest('div');
@@ -28,3 +18,25 @@ export default function decorate(block) {
     });
   });
 }
+
+function wrapChildrenWithDiv(parentElement) {
+  // Get all child elements of the parent element
+  const children = Array.from(parentElement.children);
+
+  // Loop through each child element
+  children.forEach((child, index) => {
+    // Create a new div element
+    const wrapperDiv = document.createElement('div');
+
+    // Add a unique class to the wrapper div (e.g., using the index)
+    wrapperDiv.classList.add(`wrapped-child`);
+
+    // Insert the child element inside the new div
+    wrapperDiv.appendChild(child);
+
+    // Append the new div back into the parent element
+    parentElement.appendChild(wrapperDiv);
+  });
+}
+
+
