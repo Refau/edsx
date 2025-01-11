@@ -171,9 +171,5 @@ export default async function decorate(block) {
   navWrapper.className = 'header-nav-wrapper';
   navWrapper.append(nav);
 
-  const topNav = navWrapper.querySelector('.nav-tools .default-content-wrapper');
-  block.prepend(topNav);
-  block.append(navWrapper);
-
   addAnimation();
 }
