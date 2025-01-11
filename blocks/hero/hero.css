@@ -80,7 +80,8 @@
     flex-grow: 1;               /* Allow h4 to take available space on the left */
     color: #007acd;                /* Default text color (black) */
     text-decoration: none;      /* Remove default underline */
-    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for color and underline */
+    transition: color 0.3s, text-decoration 0.3s;
+    border-bottom: 1px solid #d3d3d3; /* Smooth transition for color and underline */
 }
 
 /* Style the SVG icon */
