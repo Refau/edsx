@@ -48,10 +48,12 @@
 .content-left {
     flex: 3; /* Takes equal width */
     max-width: 50%;
+    color: #007acd !important;
 }
 
 /* Style right content */
 .content-right {
     flex: 5; /* Takes equal width */
     max-width: 50%;
+    color: #FFFFFF !important;
 }
