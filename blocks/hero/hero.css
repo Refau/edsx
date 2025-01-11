@@ -61,3 +61,50 @@
     border-radius: 0 !important;
     background-color: #007acd !important;
 }
+
+/* Style the wrapper div */
+.h4-svg-wrapper {
+    background-color: white;    /* White background */
+    display: flex;              /* Use flexbox for alignment */
+    justify-content: space-between; /* Align the items horizontally with space between */
+    align-items: center;        /* Align the items vertically in the center */
+    width: 100%;                /* Make the div take full width */
+    padding: 10px 20px;         /* Optional padding */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+/* Style the h4 */
+.h4-svg-wrapper h4 {
+    margin: 0;                  /* Remove default margin */
+    font-size: 16px;            /* You can adjust this font size */
+    flex-grow: 1;               /* Allow h4 to take available space on the left */
+    color: #007acd;                /* Default text color (black) */
+    text-decoration: none;      /* Remove default underline */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for color and underline */
+}
+
+/* Style the SVG icon */
+.h4-svg-wrapper svg {
+    margin-left: 10px;          /* Space between the text and the icon */
+    width: 24px;                /* You can adjust the size of the icon */
+    height: 24px;               /* Ensure the height matches the width */
+    fill: currentColor;         /* Make the SVG color inherit from the text color */
+    transition: fill 0.3s;      /* Smooth transition for icon color */
+}
+
+/* Hover effect on the wrapper */
+.h4-svg-wrapper:hover {
+    background-color: #007acd;     /* Dark background on hover */
+    color: white;               /* Text color changes to white on hover */
+}
+
+/* Hover effect on the text */
+.h4-svg-wrapper:hover h4 {
+    text-decoration: underline; /* Underline the text on hover */
+    color: white;               /* Change the text color to white on hover */
+}
+
+/* Hover effect on the SVG icon */
+.h4-svg-wrapper:hover svg {
+    fill: white;                /* Change SVG icon color to white on hover */
+}
