@@ -1,0 +1,124 @@
+/* Teaser base styles */
+.teaser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  margin: 2rem 0;
+  height: 400px;  /* Fixed height */
+  box-sizing: border-box;
+}
+
+/* Background color for primary variant */
+.teaser.bg-primary {
+  background-color: #002457;  /* ENGIE's primary blue */
+  color: #FFFFFF;
+}
+
+/* Image column styles */
+.teaser .columns-img-col {
+  flex: 0 0 45%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.teaser .columns-img-col picture {
+  height: 100%;
+  display: block;
+}
+
+.teaser .columns-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Content styles */
+.teaser > div:last-child {
+  flex: 0 0 55%;
+  padding: 1rem 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Text styling */
+.teaser p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.teaser p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.teaser p:nth-child(2) {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styles */
+.teaser .button-container {
+  margin-top: 2rem;
+}
+
+.teaser .button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #FFFFFF;
+  color: #002457;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.teaser .button:hover {
+  background-color: #F5F5F5;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .teaser {
+    flex-direction: column;
+    padding: 2rem;
+    height: 600px; /* Adjusted fixed height for mobile */
+  }
+
+  .teaser .columns-img-col,
+  .teaser > div:last-child {
+    flex: 0 0 50%;  /* Equal height distribution */
+    height: 50%;    /* Equal height distribution */
+  }
+
+  .teaser p:first-child {
+    font-size: 1.5rem;
+  }
+
+  .teaser p:nth-child(2) {
+    font-size: 1.25rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .teaser {
+    height: 500px; /* Slightly smaller height for very small screens */
+    padding: 1.5rem;
+  }
+
+  .teaser p:first-child {
+    font-size: 1.25rem;
+  }
+
+  .teaser p:nth-child(2) {
+    font-size: 1rem;
+  }
+}
