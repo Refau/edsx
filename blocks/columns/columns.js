@@ -15,12 +15,12 @@ export default function decorate(block) {
           picWrapper.classList.add('columns-img-col');
         }
       }
-      const columnsTeaser = document.querySelector('.columns-teaser');
+
 
       // Select the title, text, and button elements
-      const titleElement = columnsTeaser.querySelector('h2');
-      const textElement = columnsTeaser.querySelector('[data-aue-type="richtext"]');
-      const buttonElement = columnsTeaser.querySelector('.button-container');
+      const titleElement = col.querySelector('h2');
+      const textElement = col.querySelector('[data-aue-type="richtext"]');
+      const buttonElement = col.querySelector('.button-container');
 
       // Create a new div element to surround the title, text, and button
       const wrapperDiv = document.createElement('div');
@@ -32,7 +32,7 @@ export default function decorate(block) {
       wrapperDiv.appendChild(buttonElement);
 
       // Find the parent container (the column) and append the new wrapper div
-      columnsTeaser.appendChild(wrapperDiv);
+      col.appendChild(wrapperDiv);
     });
   });
 }
