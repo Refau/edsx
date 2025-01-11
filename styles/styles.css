@@ -255,3 +255,27 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+.section.align-right .default-content-wrapper,
+.section.align-right .default-content-wrapper p,
+.section.align-right .default-content-wrapper h1,
+.section.align-right .default-content-wrapper h2,
+.section.align-right .default-content-wrapper h3,
+.section.align-right .default-content-wrapper h4,
+.section.align-right .default-content-wrapper h5,
+.section.align-right .default-content-wrapper h6 {
+    text-align: right;
+    margin-left: auto;
+}
+
+.section.align-center .default-content-wrapper,
+.section.align-center .default-content-wrapper p,
+.section.align-center .default-content-wrapper h1,
+.sectionalign-center .default-content-wrapper h2,
+.section.align-center .default-content-wrapper h3,
+.section.align-center .default-content-wrapper h4,
+.section.align-center .default-content-wrapper h5,
+.section.align-center .default-content-wrapper h6 {
+    text-align: center;
+    margin: auto;
+}
