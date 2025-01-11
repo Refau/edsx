@@ -177,10 +177,91 @@
         "value": ""
       },
       {
-        "component": "richtext",
-        "name": "text",
+        "component": "text",
+        "valueType": "string",
+        "name": "heading_one",
+        "label": "Heading 1",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "heading_oneType",
         "value": "",
-        "label": "Text",
+        "label": "Heading 1 Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h4",
+            "value": "h4"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading_tow",
+        "label": "Heading 2",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "heading_towType",
+        "value": "",
+        "label": "Heading 2 Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h4",
+            "value": "h4"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading_three",
+        "label": "Heading 3",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "heading_threeType",
+        "value": "",
+        "label": "Heading 3 Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h4",
+            "value": "h4"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "hero_text",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "hero_linkTitle",
+        "label": "Button Title Attribute",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "hero_linkText",
+        "label": "Button Text",
+        "value": ""
+      },
+      {
+        "component": "aem-content",
+        "name": "hero_link",
+        "value": "",
+        "label": "Button Link",
         "valueType": "string"
       }
     ]
