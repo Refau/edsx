@@ -25,6 +25,24 @@
       },
       {
         "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Alignment",
+        "description": "Change title alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Center",
+            "value": "align-center"
+          },
+          {
+            "name": "Right",
+            "value": "align-right"
+          }
+        ]
+      },
+      {
+        "component": "select",
         "name": "titleType",
         "label": "Title Type",
         "options": [
@@ -51,24 +69,6 @@
           {
             "name": "h6",
             "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Alignment",
-        "description": "Change title alignment",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Center",
-            "value": "align-center"
-          },
-          {
-            "name": "Right",
-            "value": "align-right"
           }
         ]
       }
