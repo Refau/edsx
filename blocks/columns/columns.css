@@ -1,7 +1,7 @@
 /* Teaser Container */
 .columns-teaser {
     display: flex;
-    flex-direction: row; /* Align items horizontally */
+    flex-direction: row; /* Align items horizontally (image left, content right) */
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -26,9 +26,12 @@
     border-radius: 8px;
 }
 
-/* Content Section (Text + Button) */
+/* Content Section (Title, Text + Button) */
 .columns-teaser .wrapped-child {
     flex: 1 1 60%; /* Text and button take up 60% of the width */
+    display: flex;
+    flex-direction: column; /* Stack title, text, and button vertically */
+    justify-content: center;
 }
 
 /* Title Section */
