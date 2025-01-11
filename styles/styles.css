@@ -279,3 +279,11 @@ main .section.highlight {
     text-align: center;
     margin: auto;
 }
+
+.section.bg-primary {
+    background-color: #17255f;
+}
+
+.section.bg-secondary {
+    background-color: #007acd;
+}
