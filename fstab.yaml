@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p144258-e1488419.adobeaemcloud.com/bin/franklin.delivery/Refau/edsx/main"
+    url: "https://author-p144258-e1488419.adobeaemcloud.com/bin/franklin.delivery/refau/edsx/main"
     type: "markup"
     suffix: ".html"
