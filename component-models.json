@@ -56,9 +56,10 @@
       },
       {
         "component": "select",
-        "name": "style",
+        "name": "classes",
         "value": "",
-        "label": "Style",
+        "label": "Alignment",
+        "description": "Change title alignment",
         "valueType": "string",
         "options": [
           {
