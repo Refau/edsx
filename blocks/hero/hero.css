@@ -55,3 +55,8 @@
     flex: 5;
     color: #FFFFFF !important;
 }
+
+.button-container a {
+    border-radius: 0 !important;
+    background-color: #007acd !important;
+}
