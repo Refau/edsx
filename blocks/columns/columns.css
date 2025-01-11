@@ -34,42 +34,36 @@
 
 
 .columns-teaser {
-    position: relative;
-    background-color: #17255f; /* Couleur de fond */
-    color: white; /* Texte en blanc */
-    height: 400px; /* Hauteur fixe */
     display: flex;
-    align-items: center; /* Centre le texte verticalement */
-    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centrage vertical */
+    background-color: #17255f; /* Couleur de fond */
+    color: white; /* Texte blanc */
+    height: 400px; /* Hauteur fixe */
+    border-radius: 10px;
+    overflow: hidden;
     padding: 20px;
-    border-radius: 10px; /* Coins arrondis */
-    overflow: hidden; /* Empêche tout débordement */
 }
 
-/* Ajout de l'image en arrière-plan */
-.columns-teaser::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/content/dam/edsx/a-la-une-desktop.jpg'); /* Image en fond */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.3; /* Opacité pour assombrir l'image */
-    z-index: 1;
+/* Colonne de l'image */
+.columns-img-col {
+    flex: 1; /* Prend 50% de l'espace */
+    height: 100%; /* Remplit la hauteur du teaser */
 }
 
-/* Conteneur du texte et bouton */
+.columns-img-col img {
+    width: 100%; /* Image prend toute la largeur */
+    height: 100%; /* Image prend toute la hauteur */
+    object-fit: cover; /* Remplit sans déformation */
+}
+
+/* Colonne du texte et du bouton */
 .title-text-button-wrapper {
-    position: relative;
-    z-index: 2; /* Pour que le texte reste au-dessus de l'image */
-    text-align: center;
-    max-width: 600px; /* Largeur du texte */
+    flex: 1; /* Prend 50% de l'espace */
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espacement entre éléments */
+    justify-content: center;
+    gap: 15px; /* Espacement entre les éléments */
+    padding: 20px;
 }
 
 h2 {
@@ -93,4 +87,3 @@ h2 {
     background-color: #e76f51; /* Effet au survol */
     color: white;
 }
-
