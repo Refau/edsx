@@ -32,38 +32,44 @@
   }
 }
 
+
 .columns-teaser {
-    display: flex;
-    align-items: center;  /* Aligne les éléments verticalement */
-    background-color: #17255f;  /* Fond bleu foncé */
-    color: white;  /* Texte blanc */
+    position: relative;
+    background-color: #17255f; /* Couleur de fond */
+    color: white; /* Texte en blanc */
     height: 400px; /* Hauteur fixe */
+    display: flex;
+    align-items: center; /* Centre le texte verticalement */
+    justify-content: center; /* Centre le contenu */
     padding: 20px;
-    border-radius: 10px; /* Coins arrondis (facultatif) */
-    overflow: hidden; /* Évite les débordements */
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Empêche tout débordement */
 }
 
-/* Colonne image */
-.columns-img-col {
-    flex: 0 0 40%; /* Prend 40% de la largeur */
-    max-height: 100%; /* Garde l’image dans la hauteur du teaser */
-}
-
-.columns-img-col img {
+/* Ajout de l'image en arrière-plan */
+.columns-teaser::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Recadre l'image pour qu'elle s’adapte bien */
-    border-radius: 8px; /* Coins arrondis */
+    background-image: url('/content/dam/edsx/a-la-une-desktop.jpg'); /* Image en fond */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Opacité pour assombrir l'image */
+    z-index: 1;
 }
 
-/* Colonne contenant le texte et le bouton */
+/* Conteneur du texte et bouton */
 .title-text-button-wrapper {
-    flex: 1; /* Prend l’espace restant */
+    position: relative;
+    z-index: 2; /* Pour que le texte reste au-dessus de l'image */
+    text-align: center;
+    max-width: 600px; /* Largeur du texte */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centre le texte verticalement */
-    gap: 15px; /* Espacement entre les éléments */
-    padding: 20px;
+    gap: 15px; /* Espacement entre éléments */
 }
 
 h2 {
@@ -74,7 +80,7 @@ h2 {
 
 .button-container .button {
     display: inline-block;
-    background-color: #f4a261; /* Couleur bouton orange */
+    background-color: #f4a261; /* Bouton orange */
     color: #17255f;
     text-decoration: none;
     padding: 10px 15px;
@@ -84,6 +90,7 @@ h2 {
 }
 
 .button-container .button:hover {
-    background-color: #e76f51; /* Effet hover */
+    background-color: #e76f51; /* Effet au survol */
     color: white;
 }
+
