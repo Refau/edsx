@@ -6,7 +6,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     [...row.children].forEach((col) => {
       col.classList.add('columns-teaser');
-      wrapChildrenWithDiv(col);
+      //wrapChildrenWithDiv(col);
       const pic = col.querySelector('picture');
       if (pic) {
         const picWrapper = pic.closest('div');
