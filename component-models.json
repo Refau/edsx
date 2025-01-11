@@ -19,38 +19,9 @@
     "id": "title",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          }
-        ]
-      },
-      {
         "component": "text",
         "name": "title",
         "label": "Title"
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Alignment",
-        "description": "Change title alignment",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Center",
-            "value": "align-center"
-          },
-          {
-            "name": "Right",
-            "value": "align-right"
-          }
-        ]
       },
       {
         "component": "select",
@@ -130,13 +101,53 @@
       {
         "component": "multiselect",
         "name": "style",
+        "value": "",
         "label": "Style",
+        "valueType": "string",
         "options": [
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "name": "Alignment",
+            "children": [
+              {
+                "name": "Center",
+                "value": "align-center"
+              },
+              {
+                "name": "Right",
+                "value": "align-right"
+              }
+            ]
+          },
+          {
+            "name": "Background",
+            "children": [
+              {
+                "name": "Primary",
+                "value": "bg-primary"
+              },
+              {
+                "name": "Secondary",
+                "value": "bg-secondary"
+              }
+            ]
+          },
+          {
+            "name": "Width",
+            "children": [
+              {
+                "name": "Full",
+                "value": "full-width"
+              }
+            ]
           }
         ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "background",
+        "label": "Image",
+        "multi": false
       }
     ]
   },
