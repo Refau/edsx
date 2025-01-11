@@ -69,7 +69,9 @@
     justify-content: space-between; /* Align the items horizontally with space between */
     align-items: center;        /* Align the items vertically in the center */
     width: 100%;                /* Make the div take full width */
-    padding: 10px 20px;         /* Optional padding */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d3d3d3;         /* Optional padding */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
 }
 
@@ -79,9 +81,9 @@
     font-size: 16px;            /* You can adjust this font size */
     flex-grow: 1;               /* Allow h4 to take available space on the left */
     color: #007acd;                /* Default text color (black) */
-    text-decoration: none;      /* Remove default underline */
-    transition: color 0.3s, text-decoration 0.3s;
-    border-bottom: 1px solid #d3d3d3; /* Smooth transition for color and underline */
+    text-decoration: none;
+    padding-left: 20px;/* Remove default underline */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for color and underline */
 }
 
 /* Style the SVG icon */
@@ -89,7 +91,8 @@
     margin-left: 10px;          /* Space between the text and the icon */
     width: 24px;                /* You can adjust the size of the icon */
     height: 24px;               /* Ensure the height matches the width */
-    fill: currentColor;         /* Make the SVG color inherit from the text color */
+    fill: currentColor;
+    padding-right: 20px;/* Make the SVG color inherit from the text color */
     transition: fill 0.3s;      /* Smooth transition for icon color */
 }
 
