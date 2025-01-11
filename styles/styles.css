@@ -289,5 +289,5 @@ main .section.highlight {
 }
 
 .section.full-width .default-content-wrapper {
-
+    max-width: unset !important;
 }
