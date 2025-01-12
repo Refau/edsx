@@ -298,3 +298,36 @@ main {
     margin-right: auto;
     box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.2);
 }
+
+.section.highlight {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ajustable selon besoin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Utiliser l'image contenue dans le <picture> comme arrière-plan */
+.section.highlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Masquer l'image HTML pour éviter un double affichage */
+.section.highlight picture {
+    display: none;
+}
