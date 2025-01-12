@@ -19,6 +19,7 @@ export default function decorate(block) {
       // Select the title, text, and button elements
       const titleElement = col.querySelector('h2');
       const textElement = col.children[2];
+      console.log(textElement);
       const buttonElement = col.querySelector('.button-container');
 
       if (titleElement && textElement && buttonElement) {
