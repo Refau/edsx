@@ -476,8 +476,9 @@ function decorateIcons(element, prefix = '') {
 function decorateSections(main) {
 
   main.querySelectorAll('div.section').forEach( section => {
+    console.log(section);
     const backgroundData = section.getAttribute('data-image');
-
+    console.log(backgroundData);
     // Check if background data exists
     if (backgroundData) {
       // Store sections with background data
