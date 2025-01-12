@@ -41,3 +41,7 @@
     background-color: #0f1b40;
     color: white;
 }
+
+.teaser-text .button-container {
+    text-align: center !important;
+}
