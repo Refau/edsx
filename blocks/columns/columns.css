@@ -61,8 +61,7 @@
     height: 150px; /* Ensuring uniform image height */
     object-fit: cover; /* Ensuring image fills the space properly */
     display: block;
-    border-bottom: 3px solid white;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .title-text-button-wrapper {
