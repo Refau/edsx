@@ -492,7 +492,8 @@ function decorateSections(main) {
     section.style.display = 'none';
 
     const imageUrl = section.getAttribute("data-background");
-    console.log(imageUrl)
+    console.log(section);
+    console.log(imageUrl);
     if (imageUrl) {
       const picture = document.createElement("picture");
       const img = document.createElement("img");
