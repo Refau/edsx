@@ -476,6 +476,19 @@ function decorateIcons(element, prefix = '') {
 function decorateSections(main) {
   main.querySelectorAll(':scope > div:not([data-section-status])').forEach((section) => {
     const wrappers = [];
+    const imageUrl = section.getAttribute("data-background");
+    if (imageUrl) {
+      const picture = document.createElement("picture");
+      const img = document.createElement("img");
+      img.src = imageUrl;
+      img.alt = "Background Image";
+      img.style.width = "100%";
+      img.style.height = "auto";
+      img.style.display = "block";
+
+      picture.appendChild(img);
+      section.insertBefore(picture, section.firstChild);
+    }
     let defaultContent = false;
     [...section.children].forEach((e) => {
       if ((e.tagName === 'DIV' && e.className) || !defaultContent) {
@@ -507,21 +520,6 @@ function decorateSections(main) {
         }
       });
       sectionMeta.parentNode.remove();
-    }
-  });
-  document.querySelectorAll("[data-background]").forEach(function (section) {
-    const imageUrl = section.getAttribute("data-background");
-    if (imageUrl) {
-      const picture = document.createElement("picture");
-      const img = document.createElement("img");
-      img.src = imageUrl;
-      img.alt = "Background Image";
-      img.style.width = "100%";
-      img.style.height = "auto";
-      img.style.display = "block";
-
-      picture.appendChild(img);
-      section.insertBefore(picture, section.firstChild);
     }
   });
 }
