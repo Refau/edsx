@@ -176,4 +176,13 @@ export default async function decorate(block) {
   block.append(navWrapper);
 
   addAnimation();
+
+  const listItems = document.querySelectorAll("ul li");
+
+  listItems.forEach(li => {
+    const p = document.createElement("p"); // Create a new p element
+    p.textContent = li.textContent.trim(); // Copy text from li to p
+    li.textContent = ""; // Clear the li text
+    li.appendChild(p); // Append the p element inside li
+  });
 }
