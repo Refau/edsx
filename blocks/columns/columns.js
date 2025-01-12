@@ -16,9 +16,25 @@ export default function decorate(block) {
         }
       }
 
+
+      if (col) {
+        // Select all <h2> elements inside the container
+        const h2Element = col.querySelector("h2");
+
+        if (h2Element) {
+          // Select the next <p> sibling after <h2>
+          const pElement = h2Element.nextElementSibling;
+
+          // Add a class to the <p> element
+          if (pElement && pElement.tagName.toLowerCase() === "p") {
+            pElement.classList.add("new-class");
+          }
+        }
+      }
+
       // Select the title, text, and button elements
       const titleElement = col.querySelector('h2');
-      const textElement = col.querySelector('[data-aue-type="richtext"]');
+      const textElement = col.querySelector('.new-class');
       const buttonElement = col.querySelector('.button-container');
 
       if (titleElement && textElement && buttonElement) {
