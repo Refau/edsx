@@ -1,6 +1,12 @@
 import { readBlockConfig } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
+
+  const blockConfig = readBlockConfig(block);
+  console.log(blockConfig);
+  console.log(blockConfig.heading);
+  console.log(blockConfig['heading']);
+
   let heroBlock = document.querySelector(".hero.block");
 
 // Select the first direct child of .hero block
