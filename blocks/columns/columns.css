@@ -33,7 +33,7 @@
 }
 
 
-
+/* Teaser Component Styles */
 .columns-teaser {
     background-color: #17255f;
     color: white;
@@ -72,12 +72,16 @@
     justify-content: space-between;
     padding: 20px;
     text-align: left;
+    overflow: hidden;
 }
 
 .title-text-button-wrapper h2 {
     font-size: 1.5em;
     margin: 10px 0;
     transition: color 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .title-text-button-wrapper p {
@@ -85,6 +89,11 @@
     line-height: 1.5;
     opacity: 0.9;
     flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .button-container {
@@ -104,13 +113,6 @@
     display: inline-block;
     transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
-
-.button-container .button:hover {
-    background: #ffcc00;
-    color: #17255f;
-    transform: scale(1.05);
-}
-
 
 .button-container .button:hover {
     background: #ffcc00;
