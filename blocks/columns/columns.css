@@ -54,8 +54,7 @@
     width: 100%;
     height: auto;
     display: block;
-    border-bottom: 3px solid white;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .title-text-button-wrapper {
