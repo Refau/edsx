@@ -290,6 +290,8 @@ main .section.highlight {
 
 .section.full-width .default-content-wrapper {
     max-width: unset !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 main {
