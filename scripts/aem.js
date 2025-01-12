@@ -489,6 +489,8 @@ function decorateSections(main) {
       section.style.backgroundRepeat = "no-repeat";
     }
   });
+  console.log("test");
+  console.log(main);
   main.querySelectorAll('div[data-image]').forEach( section => {
     console.log(section);
     const backgroundData = section.getAttribute('data-image');
