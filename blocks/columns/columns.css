@@ -34,7 +34,7 @@
 
 
 
-.teaser {
+.column-teaser {
     background-color: #17255f;
     color: white;
     width: 300px;
@@ -45,12 +45,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.teaser:hover {
+.column-teaser:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
-.teaser img {
+.column-teaser img {
     width: 100%;
     height: auto;
     display: block;
@@ -61,19 +61,19 @@
     padding: 20px;
 }
 
-.teaser h2 {
+.column-teaser h2 {
     font-size: 1.5em;
     margin: 10px 0;
     transition: color 0.3s ease;
 }
 
-.teaser p {
+.column-teaser p {
     font-size: 1em;
     line-height: 1.5;
     opacity: 0.9;
 }
 
-.teaser button {
+.column-teaser button {
     background: white;
     color: #17255f;
     border: none;
@@ -84,7 +84,7 @@
     transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-.teaser button:hover {
+.column-teaser button:hover {
     background: #ffcc00;
     color: #17255f;
     transform: scale(1.05);
