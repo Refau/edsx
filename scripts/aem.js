@@ -719,20 +719,18 @@ async function loadSections(element) {
     if (i === 0 && sampleRUM.enhance) {
       sampleRUM.enhance();
     }
-    const imageUrl = sections[i].getAttribute("data-background");
-    console.log(sections[i]);
-    console.log(imageUrl);
-    if (imageUrl) {
-      const picture = document.createElement("picture");
-      const img = document.createElement("img");
-      img.src = imageUrl;
-      img.alt = "Background Image";
-      img.style.width = "100%";
-      img.style.height = "auto";
-      img.style.display = "block";
+    const backgroundUrl = sections[i].getAttribute("data-background");
 
-      picture.appendChild(img);
-      sections[i].insertBefore(picture, sections[i].firstChild);
+    if (backgroundUrl) {
+
+
+
+
+      // Set background image on parent div
+      sections[i].style.backgroundImage = `url('${backgroundUrl}')`;
+      sections[i].style.backgroundSize = "cover";
+      sections[i].style.backgroundPosition = "center";
+      sections[i].style.backgroundRepeat = "no-repeat";
     }
   }
 }
