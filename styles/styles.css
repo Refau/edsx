@@ -288,7 +288,7 @@ main .section.highlight {
     background-color: #007acd;
 }
 
-.section.full-width .default-content-wrapper {
+.section.full-width {
     max-width: unset !important;
     padding-top: 20px;
     padding-bottom: 20px;
