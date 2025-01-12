@@ -474,6 +474,20 @@ function decorateIcons(element, prefix = '') {
  * @param {Element} main The container element
  */
 function decorateSections(main) {
+
+  main.querySelectorAll('div.section').forEach( section => {
+    const backgroundData = section.getAttribute('data-background');
+
+    // Check if background data exists
+    if (backgroundData) {
+      // Store sections with background data
+      console.log(`Section found with background data: ${backgroundData}`);
+      section.style.backgroundImage = `url('${backgroundData}')`;
+      section.style.backgroundSize = "cover";
+      section.style.backgroundPosition = "center";
+      section.style.backgroundRepeat = "no-repeat";
+    }
+  });
   main.querySelectorAll(':scope > div:not([data-section-status])').forEach((section) => {
     const wrappers = [];
     let defaultContent = false;
@@ -718,19 +732,6 @@ async function loadSections(element) {
     await loadSection(sections[i]);
     if (i === 0 && sampleRUM.enhance) {
       sampleRUM.enhance();
-    }
-    const backgroundUrl = sections[i].getAttribute("data-background");
-
-    if (backgroundUrl) {
-
-
-
-
-      // Set background image on parent div
-      sections[i].style.backgroundImage = `url('${backgroundUrl}')`;
-      sections[i].style.backgroundSize = "cover";
-      sections[i].style.backgroundPosition = "center";
-      sections[i].style.backgroundRepeat = "no-repeat";
     }
   }
 }
