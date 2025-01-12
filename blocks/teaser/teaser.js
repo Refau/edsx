@@ -11,4 +11,10 @@ export default function decorate(block) {
       }
     }
   });
+
+  const innerDiv = document.querySelector(".teaser-wrapper > .teaser.block > div:nth-child(2)");
+
+  if (innerDiv) {
+    innerDiv.classList.add("text-teaser"); // Add your desired class name
+  }
 }
