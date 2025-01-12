@@ -33,57 +33,59 @@
 }
 
 
-.columns-teaser {
-    display: flex;
-    align-items: center; /* Centrage vertical */
-    background-color: #17255f; /* Couleur de fond */
-    color: white; /* Texte blanc */
-    height: 400px; /* Hauteur fixe */
+
+.teaser {
+    background-color: #17255f;
+    color: white;
+    width: 300px;
     border-radius: 10px;
     overflow: hidden;
-    padding: 20px;
-}
-
-/* Colonne de l'image */
-.columns-img-col {
-    flex: 1; /* Prend 50% de l'espace */
-    height: 100%; /* Remplit la hauteur du teaser */
-}
-
-.columns-img-col img {
-    width: 100%; /* Image prend toute la largeur */
-    height: 100%; /* Image prend toute la hauteur */
-    object-fit: cover; /* Remplit sans déformation */
-}
-
-/* Colonne du texte et du bouton */
-.title-text-button-wrapper {
-    flex: 1; /* Prend 50% de l'espace */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px; /* Espacement entre les éléments */
-    padding: 20px;
-}
-
-h2 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.button-container .button {
-    display: inline-block;
-    background-color: #f4a261; /* Bouton orange */
-    color: #17255f;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.button-container .button:hover {
-    background-color: #e76f51; /* Effet au survol */
-    color: white;
+.teaser:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.teaser img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid white;
+}
+
+.teaser-content {
+    padding: 20px;
+}
+
+.teaser h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.teaser p {
+    font-size: 1em;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.teaser button {
+    background: white;
+    color: #17255f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.teaser button:hover {
+    background: #ffcc00;
+    color: #17255f;
+    transform: scale(1.05);
 }
