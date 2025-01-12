@@ -34,7 +34,7 @@
 
 
 /* Teaser Component Styles */
-.columns-teaser {
+.column-teaser-engie {
     background-color: #17255f;
     color: white;
     width: 300px;
@@ -51,12 +51,12 @@
     margin-top: 30px;
 }
 
-.columns-teaser:hover {
+.column-teaser-engie:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
-.columns-teaser img {
+.column-teaser-engie img {
     width: 100%;
     height: 150px; /* Ensuring uniform image height */
     object-fit: cover; /* Ensuring image fills the space properly */
