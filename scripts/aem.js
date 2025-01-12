@@ -511,22 +511,6 @@ function decorateSections(main) {
     }
   });
 
-  main.querySelectorAll('.section').forEach( section => {
-    console.log(section);
-    const backgroundData = section.getAttribute('data-image');
-    console.log(backgroundData);
-    // Check if background data exists
-    if (backgroundData) {
-      // Store sections with background data
-      console.log(`Section found with background data: ${backgroundData}`);
-      section.style.backgroundImage = `url('${backgroundData}')`;
-      section.style.backgroundSize = "cover";
-      section.style.backgroundPosition = "center";
-      section.style.backgroundRepeat = "no-repeat";
-    }
-  });
-  console.log("test");
-  console.log(main);
   main.querySelectorAll('div[data-image]').forEach( section => {
     console.log(section);
     const backgroundData = section.getAttribute('data-image');
