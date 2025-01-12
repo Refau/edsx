@@ -1,0 +1,42 @@
+.teaser {
+    background-color: #17255f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.teaser-img-col img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.text-teaser {
+    max-width: 600px;
+    padding: 10px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.teaser-link {
+    display: inline-block;
+    background-color: white;
+    color: #17255f;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.teaser-link:hover {
+    background-color: #0f1b40;
+    color: white;
+}
