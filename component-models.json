@@ -3,41 +3,6 @@
     "id": "image",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "classes",
-        "value": "align-right",
-        "label": "Style",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Alignment",
-            "children": [
-              {
-                "name": "Left",
-                "value": "align-left"
-              },
-              {
-                "name": "Right",
-                "value": "align-right"
-              }
-            ]
-          },
-          {
-            "name": "Size",
-            "children": [
-              {
-                "name": "Big",
-                "value": "image-big"
-              },
-              {
-                "name": "Small",
-                "value": "image-small"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "component": "reference",
         "name": "image",
         "label": "Image",
@@ -53,28 +18,6 @@
   {
     "id": "title",
     "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Background Color",
-        "description": "The marquee background color",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Red",
-            "value": "bg-red"
-          },
-          {
-            "name": "Green",
-            "value": "bg-green"
-          },
-          {
-            "name": "Blue",
-            "value": "bg-blue"
-          }
-        ]
-      },
       {
         "component": "text",
         "name": "title",
