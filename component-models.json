@@ -54,41 +54,24 @@
     "id": "title",
     "fields": [
       {
-        "component": "multiselect",
+        "component": "select",
         "name": "classes",
-        "value": "align-right",
-        "label": "Style",
+        "value": "",
+        "label": "Background Color",
+        "description": "The marquee background color",
         "valueType": "string",
         "options": [
           {
-            "name": "Alignment",
-            "children": [
-              {
-                "name": "Left",
-                "value": "align-left"
-              },
-              {
-                "name": "Center",
-                "value": "align-center"
-              },
-              {
-                "name": "Right",
-                "value": "align-right"
-              }
-            ]
+            "name": "Red",
+            "value": "bg-red"
           },
           {
-            "name": "Color",
-            "children": [
-              {
-                "name": "Primary",
-                "value": "title-color-primary"
-              },
-              {
-                "name": "Secondary",
-                "value": "title-color-secondary"
-              }
-            ]
+            "name": "Green",
+            "value": "bg-green"
+          },
+          {
+            "name": "Blue",
+            "value": "bg-blue"
           }
         ]
       },
