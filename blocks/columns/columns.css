@@ -33,12 +33,11 @@
 }
 
 
-/* Teaser Component Styles */
 .column-teaser-engie {
-    background-color: #17255f;
+    background-color: green;
     color: white;
     width: 300px;
-    height: 450px; /* Ensuring uniform height */
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
