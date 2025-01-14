@@ -144,7 +144,7 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
-  document.title = "ENGIE";
+  document.title = "Engie Particulier";
 }
 
 loadPage();
