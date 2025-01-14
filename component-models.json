@@ -182,13 +182,6 @@
     "fields": [
       {
         "component": "text",
-        "valueType": "string",
-        "name": "name",
-        "label": "Section Name",
-        "value": ""
-      },
-      {
-        "component": "text",
         "valueType": "number",
         "name": "columns",
         "value": "",
