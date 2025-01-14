@@ -77,8 +77,9 @@ function buildAutoBlocks() {
  */
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
-
-  main.classList.add(document.querySelector('meta[name="style"]'));
+ const mainClasse = document.querySelector('meta[name="style"]')?.content;
+  if (mainClasse)
+    main.classList.add(mainClasse);
   decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
