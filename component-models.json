@@ -21,6 +21,10 @@
           {
             "name": "ENGIE Dark",
             "value": "engie-dark"
+          },
+          {
+            "name": "Default",
+            "value": "default"
           }
         ]
       }
