@@ -16,6 +16,50 @@
         "component": "text",
         "name": "robots",
         "label": "Robots"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Alignment",
+            "children": [
+              {
+                "name": "Center",
+                "value": "align-center"
+              },
+              {
+                "name": "Right",
+                "value": "align-right"
+              }
+            ]
+          },
+          {
+            "name": "Background",
+            "children": [
+              {
+                "name": "Primary",
+                "value": "bg-primary"
+              },
+              {
+                "name": "Secondary",
+                "value": "bg-secondary"
+              }
+            ]
+          },
+          {
+            "name": "Width",
+            "children": [
+              {
+                "name": "Full",
+                "value": "full-width"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
