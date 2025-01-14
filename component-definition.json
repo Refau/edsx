@@ -70,7 +70,8 @@
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "model": "section"
+                  "model": "section",
+                  "classes": "classe-from-definition"
                 }
               }
             }
@@ -121,7 +122,8 @@
                 "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
                   "columns": "2",
-                  "rows": "1"
+                  "rows": "1",
+                  "classes": "classe-from-definition"
                 }
               }
             }
