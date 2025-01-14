@@ -77,7 +77,8 @@ function buildAutoBlocks() {
  */
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
-  // hopefully forward compatible button decoration
+
+  document.querySelector('.meta[name="style"]');
   decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
