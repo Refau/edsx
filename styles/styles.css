@@ -297,3 +297,19 @@ main {
     box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+main.engie-light {
+    color: #228800 !important;
+}
+
+main.engie-dark {
+    color: #fa0f00 !important;
+}
+
+main.engie-light .section {
+    background-color: #007acd !important;
+}
+
+main.engie-dark .section {
+    background-color: #131313 !important;
+}
